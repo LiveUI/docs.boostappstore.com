@@ -5,6 +5,6 @@
 * Deployment
   * [Heroku](deployment/heroku.md)
   * Xcode
-* iOS App
+* iOS app
 * Android app
 
