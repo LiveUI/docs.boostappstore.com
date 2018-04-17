@@ -13,4 +13,5 @@
   * [ApiCore](components/apicore.md)
   * [MailCore](components/mailcore.md)
 * [Continuous Integration](continuous-integration.md)
+* Configuration
 
