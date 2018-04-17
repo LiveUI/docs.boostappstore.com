@@ -15,4 +15,5 @@
 * [Continuous Integration](continuous-integration.md)
 * [Configuration](configuration.md)
 * [Tags](untitled.md)
+* [Clients](clients.md)
 
