@@ -7,13 +7,11 @@
   * [Docker](deployment/docker.md)
   * [Xcode](deployment/xcode.md)
   * [Kubernetes](deployment/kubernetes.md)
-* [iOS app](ios-app.md)
-* [Android app](android-app.md)
+* [Configuration](configuration.md)
+* [Continuous Integration](continuous-integration.md)
 * Components
   * [ApiCore](components/apicore.md)
   * [MailCore](components/mailcore.md)
-* [Continuous Integration](continuous-integration.md)
-* [Configuration](configuration.md)
-* [Tags](untitled.md)
-* [Clients](clients.md)
+* [iOS app](ios-app.md)
+* [Android app](android-app.md)
 
