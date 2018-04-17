@@ -11,4 +11,5 @@
 * Components
   * [ApiCore](components/apicore.md)
   * [MailCore](components/mailcore.md)
+* [Kubernetes](kubernetes.md)
 
