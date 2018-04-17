@@ -14,4 +14,5 @@
   * [MailCore](components/mailcore.md)
 * [iOS app](ios-app.md)
 * [Android app](android-app.md)
+* [System integrations](system-integrations.md)
 
