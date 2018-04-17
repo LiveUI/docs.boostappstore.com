@@ -9,7 +9,7 @@
   * [Kubernetes](deployment/kubernetes.md)
 * [Configuration](configuration.md)
 * [Continuous Integration](continuous-integration.md)
-* [System integrations](system-integrations/README.md)
+* System integrations
   * [Embedding Boost](system-integrations/embedding-boost.md)
   * [Build upload integration](system-integrations/build-upload-integration.md)
 * Components
