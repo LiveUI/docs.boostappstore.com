@@ -8,5 +8,5 @@
 * iOS app
 * Android app
 * Components
-* ApiCore
+  * ApiCore
 
