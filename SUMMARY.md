@@ -9,5 +9,5 @@
 * Android app
 * Components
   * ApiCore
-* MailCore
+  * MailCore
 
