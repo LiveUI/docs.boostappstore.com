@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* Enterprise AppStore
+* [Enterprise AppStore](enterprise-appstore.md)
 * Deployment
   * [Heroku](deployment/heroku.md)
   * [Docker](deployment/docker.md)
