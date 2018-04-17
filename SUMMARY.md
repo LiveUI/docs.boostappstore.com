@@ -6,8 +6,8 @@
   * [Heroku](deployment/heroku.md)
   * [Docker](deployment/docker.md)
   * [Xcode](deployment/xcode.md)
-* iOS app
-* Android app
+* [iOS app](ios-app.md)
+* [Android app](android-app.md)
 * Components
   * ApiCore
   * MailCore
