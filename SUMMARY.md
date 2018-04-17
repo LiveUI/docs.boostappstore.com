@@ -13,7 +13,7 @@
 * Components
   * [ApiCore](components/apicore.md)
   * [MailCore](components/mailcore.md)
+  * [Vapor 3](components/vapor-3.md)
 * [iOS app](ios-app.md)
 * [Android app](android-app.md)
-* [Vapor 3](vapor-3.md)
 
