@@ -9,6 +9,6 @@
 * [iOS app](ios-app.md)
 * [Android app](android-app.md)
 * Components
-  * ApiCore
-  * MailCore
+  * [ApiCore](components/apicore.md)
+  * [MailCore](components/mailcore.md)
 
