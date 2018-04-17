@@ -9,10 +9,11 @@
   * [Kubernetes](deployment/kubernetes.md)
 * [Configuration](configuration.md)
 * [Continuous Integration](continuous-integration.md)
+* [System integrations](system-integrations.md)
 * Components
   * [ApiCore](components/apicore.md)
   * [MailCore](components/mailcore.md)
 * [iOS app](ios-app.md)
 * [Android app](android-app.md)
-* [System integrations](system-integrations.md)
+* [Vapor 3](vapor-3.md)
 
