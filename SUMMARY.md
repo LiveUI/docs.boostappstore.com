@@ -4,6 +4,7 @@
 * Enterprise AppStore
 * Deployment
   * [Heroku](deployment/heroku.md)
+  * [Docker](deployment/docker.md)
   * Xcode
 * iOS app
 * Android app
