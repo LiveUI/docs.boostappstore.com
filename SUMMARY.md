@@ -16,4 +16,5 @@
   * [Vapor 3](components/vapor-3.md)
 * [iOS app](ios-app.md)
 * [Android app](android-app.md)
+* Build upload integration
 
