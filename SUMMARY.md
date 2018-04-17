@@ -7,4 +7,6 @@
   * Xcode
 * iOS app
 * Android app
+* Components
+* ApiCore
 
