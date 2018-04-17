@@ -5,7 +5,7 @@
 * Deployment
   * [Heroku](deployment/heroku.md)
   * [Docker](deployment/docker.md)
-  * Xcode
+  * [Xcode](deployment/xcode.md)
 * iOS app
 * Android app
 * Components
