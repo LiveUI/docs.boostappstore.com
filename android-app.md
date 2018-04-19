@@ -1,3 +1,7 @@
+---
+description: Native iOS client for Boost API
+---
+
 # Android app
 
 As Boost on it's own is just an API, it needs a client to access it. Android app provides a native app experience for the user while maintaining the complete freedom to customise everything just for your organisations needs.
