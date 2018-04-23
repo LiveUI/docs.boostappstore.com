@@ -13,7 +13,8 @@
   * [Embedding Boost](system-integrations/embedding-boost.md)
   * [Build upload integration](system-integrations/build-upload-integration.md)
 * Components
-  * [ApiCore](components/apicore.md)
+  * [ApiCore](components/apicore/README.md)
+    * [Configuration](components/apicore/configuration-1.md)
   * [MailCore](components/mailcore.md)
   * [Vapor 3](components/vapor-3.md)
 * [iOS app](ios-app.md)

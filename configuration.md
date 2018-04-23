@@ -2,7 +2,7 @@
 
 ## Environmental variables & JSON config
 
-Boost is configured through an extended configuration file of **ApiCore**. In this section we wil be only describing properties that are not available in **ApiCore** module. Please refer to this [page](components/apicore.md) for further details.
+Boost is configured through an extended configuration file of **ApiCore**. In this section we wil be only describing properties that are not available in **ApiCore** module. Please refer to this [page](components/apicore/configuration-1.md) for further details.
 
 ```text
 
