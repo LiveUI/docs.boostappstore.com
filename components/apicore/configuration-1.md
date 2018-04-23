@@ -35,6 +35,8 @@ The JSON config may look something  like this:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+Comment for each value is:
+
 ```text
 server.name            - Name of the server
 server.url             - Client facing URL of the server, if not set, system will try to read X-Forwarded-Proto header (see Nginx, etc). Should even that be missing, http://localhost:8080 will be used. (optional)
