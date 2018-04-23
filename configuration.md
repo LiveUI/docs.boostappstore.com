@@ -54,12 +54,12 @@ The JSON config may look like this
 
 **jwt\_secret** - You have to set the secret to run Boost in production mode
 
-database.host - Database host \(optional, default `localhost`\)  
-database.port - Database port \(optional, default `5432`\)  
-database.name - Database name  
-database.user - Login username  
-database.password - Login password  
-database.logging - Enable logging for your SQL queries \(default false\)
+**database.host** - Database host \(optional, default `localhost`\)  
+**database.port** - Database port \(optional, default `5432`\)  
+**database.name** - Database name  
+**database.user** - Login username  
+**database.password** - Login password  
+**database.logging** - Enable logging for your SQL queries \(default false\)
 
 ## Xcode
 
