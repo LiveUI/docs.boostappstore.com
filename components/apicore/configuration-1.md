@@ -1,11 +1,13 @@
 # Configuration
 
 ```text
-CONFIG_PATH         // Path to your configuration file
+CONFIG_PATH             // Path to your configuration file
 ```
 
-The JSON config may look like this
+The JSON config may look something  like this:
 
+{% code-tabs %}
+{% code-tabs-item title="config.json" %}
 ```swift
 {
 	"server": {
@@ -30,6 +32,8 @@ The JSON config may look like this
 	}
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 **server.name** - Name of the server  
 **server.url** - Client facing URL of the server, if not set, system will try to read `X-Forwarded-Proto` header \(see Nginx, etc\). Should even that be missing, `http://localhost:8080` will be used. _\(optional\)_  
