@@ -1,9 +1,10 @@
 # Configuration
 
-## Environmental variables
+## Environmental variables & JSON config
 
 Environmental variables are being passed to the app at the start and are as follows
-```
+
+```text
 // PostgreSQL Database
 DB_HOST         // Database host (default is localhost)
 DB_PORT         // Database port (default is 5432)
@@ -17,24 +18,60 @@ DB_LOGGING      // Enable logging for your SQL queries (values 1/0 or true/false
 LOCAL_ROOT      // Root folder for local file storage, if not set, system will use `HOME`
 
 // Security
-JWT_SECRET      // You have to set the secret to run Boost in production mode
-
-
+JWT_SECRET      // 
 ```
+
+The JSON config may look like this
+
+```swift
+{
+	"server": {
+		"name": "Booster!",
+		"url": "http://localhost:8080",
+		"max_upload": 50
+	},
+	"jwt_secret": "secret",
+	"database": {
+		"host": "localhost",
+		"port": 5432,
+		"user": "boost",
+		"password": "aaaaaa",
+		"database": "boost",
+		"logging": true
+	},
+	"mail": {
+		"mailgun": {
+			"domain": "sandbox-domain.mailgun.org",
+			"key": "secret-key"
+		}
+	}
+}
+```
+
+**server.name** - Name of the server  
+**server.url** - Client facing URL of the server, if not set, system will try to read `X-Forwarded-Proto` header \(see Nginx, etc\). Should even that be missing, `http://localhost:8080` will be used. _\(optional\)_  
+**server.max\_upload** - Max file size to be uploaded onto the server as a Data file. _\(optional, default is 50Mb\)_
+
+**jwt\_secret** - You have to set the secret to run Boost in production mode
+
+database.host - Database host \(optional, default `localhost`\)  
+database.port - Database port \(optional, default `5432`\)  
+database.name - Database name  
+database.user - Login username  
+database.password - Login password  
+database.logging - Enable logging for your SQL queries \(default false\)
 
 ## Xcode
 
 To configure environmental variables in Xcode, edit the `Run` scheme and set these directly onto the target.
 
-<p>
-   <img src="https://raw.githubusercontent.com/wiki/LiveUI/Boost/Images/xcode/select-scheme.png" alt="" />
-   <i><small>* List of schemes</small></i>
-</p>
+![](https://raw.githubusercontent.com/wiki/LiveUI/Boost/Images/xcode/select-scheme.png)
 
-<p>
-   <img src="https://raw.githubusercontent.com/wiki/LiveUI/Boost/Images/xcode/edit-scheme.png" alt="" /> 
-   <i><small>* Editting environmental variables in a scheme</small></i>
-</p>
+ \* List of schemes
+
+![](https://raw.githubusercontent.com/wiki/LiveUI/Boost/Images/xcode/edit-scheme.png)
+
+ \* Editting environmental variables in a scheme
 
 > To change a port on which your boost app will be running, enable and edit the `Arguments passed on launch` section.
 
