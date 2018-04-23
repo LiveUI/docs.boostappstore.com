@@ -7,7 +7,9 @@
   * [Docker](deployment/docker.md)
   * [Xcode](deployment/xcode.md)
   * [Kubernetes](deployment/kubernetes.md)
-* [Configuration](configuration.md)
+* [Configuration](configuration/README.md)
+  * [System](configuration/untitled.md)
+  * [Xcode](configuration/xcode.md)
 * [Continuous Integration](continuous-integration.md)
 * System integrations
   * [Embedding Boost](system-integrations/embedding-boost.md)
@@ -19,6 +21,5 @@
   * [Vapor 3](components/vapor-3.md)
 * [iOS app](ios-app.md)
 * [Android app](android-app.md)
-* Xcode
-* System
+* [BoostCore](boostcore.md)
 
