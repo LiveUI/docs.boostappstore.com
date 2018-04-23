@@ -35,16 +35,18 @@ The JSON config may look something  like this:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-**server.name** - Name of the server  
-**server.url** - Client facing URL of the server, if not set, system will try to read `X-Forwarded-Proto` header \(see Nginx, etc\). Should even that be missing, `http://localhost:8080` will be used. _\(optional\)_  
-**server.max\_upload** - Max file size to be uploaded onto the server as a Data file. _\(optional, default is 50Mb\)_
+```text
+server.name            - Name of the server
+server.url             - Client facing URL of the server, if not set, system will try to read X-Forwarded-Proto header (see Nginx, etc). Should even that be missing, http://localhost:8080 will be used. (optional)
+server.max_upload      - Max file size to be uploaded onto the server as a Data file. (optional, default is 50Mb)
 
-**jwt\_secret** - You have to set the secret to run Boost in production mode
+jwt_secret             - You have to set the secret to run Boost in production mode
 
-**database.host** - Database host _\(optional, default `localhost`\)_  
-**database.port** - Database port _\(optional, default `5432`\)_  
-**database.name** - Database name  
-**database.user** - Login username  
-**database.password** - Login password  
-**database.logging** - Enable logging for your SQL queries _\(default false\)_
+database.host          - Database host (optional, default localhost)
+database.port          - Database port (optional, default 5432)
+database.name          - Database name
+database.user          - Login username
+database.password      - Login password
+database.logging       - Enable logging for your SQL queries (default false)
+```
 
