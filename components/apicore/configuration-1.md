@@ -1,5 +1,9 @@
 # Configuration
 
+## Environmental variables & JSON config {#environmental-variables-and-json-config}
+
+In your environmental variables you can optionally specify a path to your configuration JSON file. By default, system will be looking for `config.default.json` in the root of your project.
+
 ```text
 CONFIG_PATH             // Path to your configuration file
 ```
