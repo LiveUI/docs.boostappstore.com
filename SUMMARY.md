@@ -7,7 +7,7 @@
   * [Docker](deployment/docker.md)
   * [Xcode](deployment/xcode.md)
   * [Kubernetes](deployment/kubernetes.md)
-* [Configuration](configuration/README.md)
+* Configuration
   * [System](configuration/untitled.md)
   * [Xcode](configuration/xcode.md)
 * [Continuous Integration](continuous-integration.md)
