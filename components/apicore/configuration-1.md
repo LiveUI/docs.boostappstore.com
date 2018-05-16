@@ -56,3 +56,35 @@ database.password      - Login password
 database.logging       - Enable logging for your SQL queries (default false)
 ```
 
+#### Override default values with environmental variables
+
+```swift
+// Root
+load("apicore.jwt_secret", to: &jwtSecret)
+// Mail
+load("apicore.mail.mailgun.domain", to: &mail.mailgun.domain)
+load("apicore.mail.mailgun.key", to: &mail.mailgun.key)
+// Database
+load("apicore.database.host", to: &database.host)
+load("apicore.database.user", to: &database.user)
+load("apicore.database.password", to: &database.password)
+load("apicore.database.port", to: &database.port)
+load("apicore.database.database", to: &database.database)
+load("apicore.database.logging", to: &database.logging)
+// Server
+load("apicore.server.name", to: &server.name)
+load("apicore.server.url", to: &server.url)
+load("apicore.server.max_upload_filesize", to: &server.maxUploadFilesize)
+// Storage (Local)
+load("apicore.storage.local.root", to: &storage.local.root)
+// Storage (S3)
+load("apicore.storage.s3.bucket", to: &storage.s3.bucket)
+load("apicore.storage.s3.access_key", to: &storage.s3.accessKey)
+load("apicore.storage.s3.secret_key", to: &storage.s3.secretKey)
+if let value = self.property(key: "apicore.storage.s3.region"), let converted = Region(rawValue: value) {
+    storage.s3.region = converted
+}
+load("apicore.storage.s3.security_token", to: &storage.s3.securityToken)
+
+```
+
