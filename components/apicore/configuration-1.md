@@ -62,6 +62,13 @@ You can override any property in a default state or configured through a custom 
 
 The list of variables available reflects the paths in the `Configuration` object and can be either lowercased or uppercased based on the developers preference.
 
+The order in which the system looks for the environmental properties is:
+
+\* apicore.jwt\_secret  
+\* APICORE.JWT\_SECRET  
+\* apicore\_jwt\_secret  
+\* APICORE\_JWT\_SECRET
+
 ```swift
 // Root
 load("apicore.jwt_secret", to: &jwtSecret)
