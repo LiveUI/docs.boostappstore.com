@@ -56,7 +56,11 @@ database.password      - Login password
 database.logging       - Enable logging for your SQL queries (default false)
 ```
 
-#### Override default values with environmental variables
+#### Override default or config values with environmental variables
+
+You can override any property in a default state or configured through a custom config json file using environmental variables.
+
+The list of variables available reflects the paths in the `Configuration` object and can be either lowercased or uppercased based on the developers preference.
 
 ```swift
 // Root
