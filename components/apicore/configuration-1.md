@@ -64,10 +64,12 @@ The list of variables available reflects the paths in the `Configuration` object
 
 The order in which the system looks for the environmental properties is:
 
-\* apicore.jwt\_secret  
-\* APICORE.JWT\_SECRET  
-\* apicore\_jwt\_secret  
-\* APICORE\_JWT\_SECRET
+```text
+1) apicore.jwt_secret
+2) APICORE.JWT_SECRET
+3) apicore_jwt_secret
+4) APICORE_JWT_SECRET
+```
 
 ```swift
 // Root
