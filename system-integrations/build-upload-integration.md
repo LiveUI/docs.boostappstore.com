@@ -1,6 +1,6 @@
 # Build upload integration
 
-Boost can be integrated by literally any CI system due to it’s API based core. The whole system including all of the admin panel functionality is a REST API. Usually the easiest way to upload a build is to use a CURL request. Example curl requests are listed below.
+Boost can be integrated by literally any CI system due to its API based core. The whole system including all of the admin panel functionality is a REST API. Usually the easiest way to upload a build is to use a CURL request. Example curl requests are listed below.
 
 Curl requests
 
