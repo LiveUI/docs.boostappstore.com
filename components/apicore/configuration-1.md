@@ -73,6 +73,8 @@ apicore.database.user          - Login username
 apicore.database.password      - Login password
 apicore.database.logging       - Enable logging for your SQL queries (default false)
 
+apicore.storage.local.root     - Path to the local file root
+
 apicore.storage.s3.enabled           - Enable or disable S3 (local storage will be used if disabled) 
 apicore.storage.s3.bucket            - Default S3 bucket (optional)
 apicore.storage.s3.access_key        - S3 access key (optional)
