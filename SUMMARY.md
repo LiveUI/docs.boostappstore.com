@@ -2,19 +2,19 @@
 
 * [Introduction](README.md)
 * [Enterprise AppStore](enterprise-appstore.md)
-* Deployment
+* [Deployment](deployment/README.md)
   * [Heroku](deployment/heroku.md)
   * [Docker](deployment/docker.md)
   * [Xcode](deployment/xcode.md)
   * [Kubernetes](deployment/kubernetes.md)
-* Configuration
+* [Configuration](configuration/README.md)
   * [System](configuration/untitled.md)
   * [Xcode](configuration/xcode.md)
 * [Continuous Integration](continuous-integration.md)
-* System integrations
+* [System integrations](system-integrations/README.md)
   * [Embedding Boost](system-integrations/embedding-boost.md)
   * [Build upload integration](system-integrations/build-upload-integration.md)
-* Components
+* [Components](components/README.md)
   * [ApiCore](components/apicore/README.md)
     * [Configuration](components/apicore/configuration-1.md)
   * [MailCore](components/mailcore.md)

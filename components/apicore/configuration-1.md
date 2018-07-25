@@ -42,18 +42,28 @@ The JSON config may look something  like this:
 Comment for each value is:
 
 ```text
-server.name            - Name of the server
-server.url             - Client facing URL of the server, if not set, system will try to read X-Forwarded-Proto header (see Nginx, etc). Should even that be missing, http://localhost:8080 will be used. (optional)
-server.max_upload      - Max file size to be uploaded onto the server as a Data file. (optional, default is 50Mb)
+apicore.server.name                     - Name of the server
+apicore.server.url                      - Client facing URL of the server, if not set, system will try to read X-Forwarded-Proto header (see Nginx, etc). Should even that be missing, http://localhost:8080 will be used. (optional)
+apicore.server.max_upload_filesize      - Max file size to be uploaded onto the server as a Data file. (optional, default is 50Mb)
 
-jwt_secret             - You have to set the secret to run Boost in production mode
+apicore.jwt_secret             - You have to set the secret to run Boost in production mode
 
-database.host          - Database host (optional, default localhost)
-database.port          - Database port (optional, default 5432)
-database.name          - Database name
-database.user          - Login username
-database.password      - Login password
-database.logging       - Enable logging for your SQL queries (default false)
+apicore.mail.mailgun.domain    - Mailgun domain
+apicore.mail.mailgun.key       - Mailgun API key
+
+apicore.database.host          - Database host (optional, default localhost)
+apicore.database.port          - Database port (optional, default 5432)
+apicore.database.name          - Database name
+apicore.database.user          - Login username
+apicore.database.password      - Login password
+apicore.database.logging       - Enable logging for your SQL queries (default false)
+
+apicore.storage.s3.enabled           - Enable or disable S3 (local storage will be used if disabled) 
+apicore.storage.s3.bucket            - Default S3 bucket (optional)
+apicore.storage.s3.access_key        - S3 access key (optional)
+apicore.storage.s3.secret_key        - S3 secret key (optional)
+apicore.storage.s3.region            - S3 region (optional)
+apicore.storage.s3.security_token    - S3 security token (optional)
 ```
 
 #### Override default or config values with environmental variables
@@ -71,33 +81,5 @@ The order in which the system looks for the environmental properties is:
 4) APICORE_JWT_SECRET
 ```
 
-```swift
-// Root
-load("apicore.jwt_secret", to: &jwtSecret)
-// Mail
-load("apicore.mail.mailgun.domain", to: &mail.mailgun.domain)
-load("apicore.mail.mailgun.key", to: &mail.mailgun.key)
-// Database
-load("apicore.database.host", to: &database.host)
-load("apicore.database.user", to: &database.user)
-load("apicore.database.password", to: &database.password)
-load("apicore.database.port", to: &database.port)
-load("apicore.database.database", to: &database.database)
-load("apicore.database.logging", to: &database.logging)
-// Server
-load("apicore.server.name", to: &server.name)
-load("apicore.server.url", to: &server.url)
-load("apicore.server.max_upload_filesize", to: &server.maxUploadFilesize)
-// Storage (Local)
-load("apicore.storage.local.root", to: &storage.local.root)
-// Storage (S3)
-load("apicore.storage.s3.bucket", to: &storage.s3.bucket)
-load("apicore.storage.s3.access_key", to: &storage.s3.accessKey)
-load("apicore.storage.s3.secret_key", to: &storage.s3.secretKey)
-if let value = self.property(key: "apicore.storage.s3.region"), let converted = Region(rawValue: value) {
-    storage.s3.region = converted
-}
-load("apicore.storage.s3.security_token", to: &storage.s3.securityToken)
 
-```
 
