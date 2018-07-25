@@ -8,6 +8,8 @@ In your environmental variables you can optionally specify a path to your config
 CONFIG_PATH             // Path to your configuration file
 ```
 
+Most simple way to configure the system is to set en anvironmental variable pointing to an `ApiCore` configuration file.
+
 The JSON config may look something  like this:
 
 {% code-tabs %}
@@ -38,6 +40,19 @@ The JSON config may look something  like this:
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+ApiCore can be launched on it's own with a default configuration in which the database connections are pre-set to:
+
+```text
+apicore.database.host = localhost
+apicore.database.port = 5432
+apicore.database.name = boost
+apicore.database.user = boost
+apicore.database.password = aaaaaa
+apicore.database.logging = false
+```
+
+> You can also combine the methods, have part in the config file and only override some properties using the ENV property approach \(described below\)
 
 Comment for each value is:
 
@@ -81,5 +96,7 @@ The order in which the system looks for the environmental properties is:
 4) APICORE_JWT_SECRET
 ```
 
+**In Xcode the environmental variables can be set in the scheme settings**
 
+![](../../.gitbook/assets/screenshot-2018-07-25-at-13.55.37.png)
 
